@@ -1,4 +1,4 @@
-from numpy.random import beta, gamma, binomial, exponential
+from numpy.random import beta, gamma, binomial
 from functools import partial
 from pandas import Series, DataFrame
 import operator

@@ -10,7 +10,7 @@ The purpose of this project is to help people simply create and maintain Thompso
 
 The following method will instantiate the experiment with the default priors.
 ```python
-from thompson_sampling.bernoulli import BernoulliExperiment
+from tsampling.bernoulli import BernoulliExperiment
 
 experiment = BernoulliExperiment(arms=2)
 ```
@@ -18,8 +18,8 @@ experiment = BernoulliExperiment(arms=2)
 You can also set your custom priors by using the Priors module:
 ```python
 
-from thompson_sampling.bernoulli import BernoulliExperiment
-from thompson_sampling.priors import BetaPrior
+from tsampling.bernoulli import BernoulliExperiment
+from tsampling.priors import BetaPrior
 
 pr = BetaPrior()
 pr.add_one(mean=0.5, variance=0.2, effective_size=10, label="option1")
@@ -39,6 +39,13 @@ You can update the different arms information by adding reward information:
 ```python
 rewards = [{"label":"option1", "reward":1}, {"label":"option2", "reward":0}]
 experiment.add_rewards(rewards)
+```
+
+### Plotting Posterior Distribution:
+You can plot the posterior distribution 
+
+```python
+experiment.plot_posterior(rewards)
 ```
 
 ## Installation

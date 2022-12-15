@@ -1,6 +1,9 @@
 # tsampling
 Thompson Sampling Multi-Armed Bandit for Python
 
+"Thompson sampling is an algorithm for online decision problems where actions are taken sequentially in a manner that
+must balance between exploiting what is known to maximize immediate performance and investing to accumulate new information that may improve future performance."(Russo, n.d.)
+
 A package that implements the Thompson Sampling approach for a Multi-Armed Bandit.
 The purpose of this project is to help people simply create and maintain Thompson Sampling experiments that have Bernoulli and Poisson distributions.
 

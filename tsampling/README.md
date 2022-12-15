@@ -45,7 +45,7 @@ experiment.add_rewards(rewards)
 You can plot the posterior distribution 
 
 ```python
-experiment.plot_posterior(rewards)
+experiment.plot_posterior()
 ```
 
 ## Installation

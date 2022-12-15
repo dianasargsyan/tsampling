@@ -132,7 +132,13 @@ class RootThompsonSampling:
         return max(theta_est.items(), key=operator.itemgetter(1))[0]
 
     def plot_posterior(self):
-        """ See the posteriors' distribution"""
+        """ See the posteriors' distribution
+        
+        
+        Returns
+        -------
+        Plot of Posterior Distribution
+        """
         plot_values = {
             key: self._sample_posterior(10000, key)
             for key, _ in self.posteriors.items()

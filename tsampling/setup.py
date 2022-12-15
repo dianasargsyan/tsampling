@@ -34,7 +34,7 @@ setup(
     packages=find_packages(include=['tsampling', 'tsampling.*']),
     test_suite='tests',
     url='https://github.com/dianasargsyan/tsampling.git',
-    version='0.1.1',
+    version='0.0.1',
     zip_safe=False,
     long_description=long_description,
     long_description_content_type="text/markdown",

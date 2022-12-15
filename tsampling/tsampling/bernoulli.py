@@ -23,6 +23,11 @@ class BernoulliExperiment(RootThompsonSampling):
         Parameters
         ----------
         results: List[dict] :
+
+        Returns
+        -------
+        None
+            
             
         """
 

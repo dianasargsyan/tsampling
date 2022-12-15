@@ -22,6 +22,7 @@ class BetaPrior(RootPrior):
             
         effective_size: int 
 
+
         """
         if mean >= 1 or mean <= 0:
             raise ValueError(f"mean:{mean} must be in (0,1)")
@@ -53,7 +54,9 @@ class GammaPrior(RootPrior):
             
         effective_size: None : int
             
-
+        Returns
+        -------
+        shape and scale
         """
         if not isna(variance):
             if any([mean <= 0, variance <= 0]):

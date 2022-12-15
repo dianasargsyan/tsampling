@@ -25,7 +25,10 @@ class PoissonExperiment(RootThompsonSampling):
         Parameters
         ----------
         results: List[dict] :
-            
+
+        Returns
+        -------
+        None
 
         """
         for result in results:

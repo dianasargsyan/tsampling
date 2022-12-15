@@ -49,3 +49,11 @@ class TestBernoulliExperiment:
         exper = BernoulliExperiment(3)
         assert isinstance(exper.get_distribution(size=10000), list)
         assert len(exper.get_distribution(size=1000)) == len(exper.posteriors)
+    
+    def test_plot_posterior(self):
+        """ Tests plot_posterior function for Bernoulli experiment """
+        exper = BernoulliExperiment(3)
+        assert True
+        
+    
+    

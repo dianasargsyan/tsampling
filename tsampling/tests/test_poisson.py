@@ -48,3 +48,8 @@ class TestPoissonExperiment:
         exper = PoissonExperiment(3)
         assert isinstance(exper.get_distribution(size=10000), list)
         assert len(exper.get_distribution(size=1000)) == len(exper.posteriors)
+    
+    def test_plot_posterior(self):
+        """ Tests plot_posterior function for Poisson experiment """
+        exper = PoissonExperiment(3)
+        assert True
